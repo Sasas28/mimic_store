@@ -12,8 +12,21 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+picture {
+    display: block;
+}
+
 .border {
     border: 1px solid black;
+}
+
+.border-1 {
+    border: 1px solid red;
 }
 
 .page {
@@ -45,4 +58,36 @@ a {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 600;
+}
+
+.hero-bottom-container {
+    background-color: #178D1D;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bottom {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.hero-bottom_message {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.hero-bottom_btn {
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    background-color: #178D1D;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
 }
