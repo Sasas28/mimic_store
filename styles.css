@@ -21,12 +21,12 @@ picture {
     display: block;
 }
 
-.border {
+.borderB {
     border: 1px solid black;
 }
 
-.border-1 {
-    border: 1px solid red;
+.borderR {
+    border: 1px solid white;
 }
 
 .page {
@@ -91,3 +91,51 @@ picture {
     font-weight: 500;
     cursor: pointer;
 }
+
+.product-gallery-container {
+    padding: 50px 0;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: red;
+    }
+    .product-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .product-gallery_item-main {
+        max-width: 450px;
+    }
+    
+    .product-gallery_item {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: gray;
+    }
+    .product-gallery_item-main {
+        /* max-width: 600px;
+        margin-right: 20px;
+        margin-bottom: 20px; */
+    }
+    
+    .product-gallery_item {
+        /* max-width: 300px;
+        margin-right: 10px; */
+    }
+  }
+  
